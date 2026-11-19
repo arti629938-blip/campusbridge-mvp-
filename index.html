@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampusBridge — Verified Local Opportunities for Dehradun Students</title>
+  <meta name="description" content="CampusBridge connects MBA and college students in Dehradun with local startups, businesses, retailers, and agencies for verified internships, part-time jobs, and short-term projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand" data-nav="home">
+        <span class="brand-logo">CB</span>
+        <div class="brand-text">
+          <span class="brand-name">CampusBridge</span>
+          <span class="brand-tag">Dehradun Pilot MVP</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="desktopNav">
+        <button class="nav-link active" data-nav="home">Home</button>
+        <button class="nav-link" data-nav="opportunities">Opportunities</button>
+        <button class="nav-link" data-nav="dashboard">Student Dashboard</button>
+        <button class="nav-link" data-nav="business">For Businesses</button>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-sm" id="headerProfileBtn">Create Student Profile</button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+      <button class="mobile-nav-link active" data-nav="home">Home</button>
+      <button class="mobile-nav-link" data-nav="opportunities">Opportunities</button>
+      <button class="mobile-nav-link" data-nav="dashboard">Student Dashboard</button>
+      <button class="mobile-nav-link" data-nav="business">For Businesses</button>
+      <button class="btn btn-primary btn-full" id="mobileProfileBtn">Create Student Profile</button>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <!-- ==================== VIEW 1: HOME ==================== -->
+    <section id="view-home" class="view active">
+      <!-- Hero Section -->
+      <div class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <span class="pill-badge">Dehradun Campus Pilot • MBA &amp; College Students</span>
+            <h1>
+              Verified Local Internships &amp; Projects Built Around Your
+              <span class="gradient-text">Academic Schedule</span>
+            </h1>
+            <p class="hero-subtitle">
+              CampusBridge connects college students—starting with MBA and graduate students around DBS Global University and Dehradun—with local startups, small businesses, retailers, agencies, and service providers for flexible internships, part-time work, and skill-based projects.
+            </p>
+            <div class="hero-cta">
+              <button class="btn btn-primary btn-lg" data-nav="opportunities">Explore Opportunities</button>
+              <button class="btn btn-outline btn-lg" id="heroProfileBtn">Create Student Profile</button>
+            </div>
+            <div class="hero-subaction">
+              <span>Representing a local Dehradun business?</span>
+              <button class="text-link" data-nav="business">Submit an opportunity →</button>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <span class="status-dot"></span>
+              <span>MVP Core Feature: Profile &amp; Schedule Matching</span>
+            </div>
+            <div class="match-preview">
+              <div class="match-profile-box">
+                <div class="avatar-circle">MBA</div>
+                <div>
+                  <strong>Student Profile</strong>
+                  <p>Skills: Marketing, Social Media, Research</p>
+                  <p>Availability: Evenings &amp; Weekends (12 hrs/wk)</p>
+                </div>
+              </div>
+              <div class="match-arrow">Matched Locally in Dehradun ↓</div>
+              <div class="match-role-box">
+                <div class="match-role-top">
+                  <span class="badge badge-blue">Short-Term Project</span>
+                  <span class="badge badge-purple">Schedule Fit</span>
+                </div>
+                <strong>Local Brand Social Media &amp; Field Research</strong>
+                <p>Rajpur Road, Dehradun • Flexible 10–12 hrs/week</p>
+              </div>
+            </div>
+            <p class="hero-card-footnote">
+              Illustrative matching preview. All listings are screened for student-schedule compatibility before going live.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Problem & Solution -->
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-header center">
+            <span class="section-tag">Why CampusBridge</span>
+            <h2>Solving Both Sides of the Local Talent Gap</h2>
+            <p>Replacing scattered WhatsApp groups and generic job boards with one trusted local platform.</p>
+          </div>
+
+          <div class="two-col-grid">
+            <div class="info-card">
+              <div class="card-icon icon-blue">🎓</div>
+              <h3>For Dehradun College &amp; MBA Students</h3>
+              <p class="card-lead">
+                Students struggle to find genuine part-time jobs, internships, and short-term projects that actually fit alongside classes and exams.
+              </p>
+              <ul class="check-list">
+                <li><strong>One Trusted Platform:</strong> Stop hunting across scattered WhatsApp groups, social feeds, and generic portals.</li>
+                <li><strong>Schedule-First Filters:</strong> Find roles built for evenings, weekends, hybrid work, or term breaks.</li>
+                <li><strong>Skill-Based Matching:</strong> Highlight your academic focus and practical skills to match relevant local roles.</li>
+                <li><strong>Verified Local Listings:</strong> Business opportunities are screened for student suitability before listing.</li>
+              </ul>
+            </div>
+
+            <div class="info-card">
+              <div class="card-icon icon-purple">🏢</div>
+              <h3>For Local Dehradun Businesses</h3>
+              <p class="card-lead">
+                Local startups, retailers, agencies, and service providers need affordable, flexible young talent without lengthy hiring cycles.
+              </p>
+              <ul class="check-list">
+                <li><strong>Practical Business Functions:</strong> Get support in sales, marketing, market research, social media, and operations.</li>
+                <li><strong>Flexible Engagement Models:</strong> Post 4-week projects, part-time roles, or structured internships.</li>
+                <li><strong>Local Market Proximity:</strong> Connect directly with motivated MBA, undergraduate, and postgraduate talent in Dehradun.</li>
+                <li><strong>Simple Screening Submission:</strong> Submit an opportunity in under 3 minutes for pilot review.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header center">
+            <span class="section-tag">How the MVP Works</span>
+            <h2>Simple 3-Step Flow</h2>
+          </div>
+          <div class="three-col-grid">
+            <div class="step-card">
+              <span class="step-num">01</span>
+              <h3>Create Your Student Profile</h3>
+              <p>Add your college, degree (e.g., MBA, BBA, UG/PG), skills, interests, Dehradun location, and weekly class-free availability.</p>
+            </div>
+            <div class="step-card">
+              <span class="step-num">02</span>
+              <h3>Discover Matched Opportunities</h3>
+              <p>Browse screened internships, part-time roles, and short-term projects filtered by your skills, schedule, and career interests.</p>
+            </div>
+            <div class="step-card">
+              <span class="step-num">03</span>
+              <h3>Apply &amp; Track on Your Dashboard</h3>
+              <p>Apply in seconds with your saved profile, save roles for later, and track all applications from one clean dashboard.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Opportunities Preview -->
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-header flex-between">
+            <div>
+              <span class="section-tag">Dehradun Pilot Demo Listings</span>
+              <h2>Sample Local Opportunities</h2>
+              <p>Illustrative opportunities modeled on Dehradun's local startup, retail, agency, and service ecosystem.</p>
+            </div>
+            <button class="btn btn-outline" data-nav="opportunities">View All Opportunities →</button>
+          </div>
+          <div class="opportunities-grid" id="homeFeaturedGrid"></div>
+        </div>
+      </section>
+
+      <!-- Pilot Access & Pricing Transparency -->
+      <section class="section">
+        <div class="container">
+          <div class="pilot-banner">
+            <div>
+              <span class="pill-badge">Campus Pilot Access</span>
+              <h2>Free for Students During the Dehradun Pilot</h2>
+              <p>
+                During our initial MVP pilot, core profile creation, opportunity matching, and applications are free for students. An optional <strong>₹199/month</strong> Student Pro tier (for priority matching and premium verified opportunities) is part of our upcoming pilot validation test alongside business listing partnerships.
+              </p>
+            </div>
+            <div class="pilot-banner-actions">
+              <button class="btn btn-primary" id="pilotJoinBtn">Join Student Pilot</button>
+              <button class="btn btn-outline" data-nav="business">Post Local Opportunity</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ==================== VIEW 2: OPPORTUNITIES ==================== -->
+    <section id="view-opportunities" class="view">
+      <div class="page-header">
+        <div class="container">
+          <span class="section-tag">Explore Opportunities</span>
+          <h1>Dehradun Internships, Part-Time Jobs &amp; Projects</h1>
+          <p>Filter verified local roles by type, business function, and compatibility with your college schedule.</p>
+        </div>
+      </div>
+
+      <div class="container page-body">
+        <!-- Profile Match Prompt -->
+        <div class="alert-banner" id="oppProfilePrompt">
+          <div>
+            <strong>Unlock Personalized Match Scores:</strong> Create your student profile to automatically see how each opportunity fits your skills and class schedule.
+          </div>
+          <button class="btn btn-primary btn-sm" id="oppCreateProfileBtn">Create Profile</button>
+        </div>
+
+        <!-- Search & Filter Bar -->
+        <div class="filter-panel">
+          <div class="search-box">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search by role, skill (e.g., Marketing, Excel, Sales), business, or Dehradun area..."
+            />
+          </div>
+          <div class="filter-controls">
+            <select id="filterType" aria-label="Filter by Opportunity Type">
+              <option value="all">All Opportunity Types</option>
+              <option value="Internship">Internship</option>
+              <option value="Part-Time Job">Part-Time Job</option>
+              <option value="Short-Term Project">Short-Term Project</option>
+            </select>
+
+            <select id="filterDomain" aria-label="Filter by Business Function">
+              <option value="all">All Functions</option>
+              <option value="Marketing">Marketing</option>
+              <option value="Sales">Sales</option>
+              <option value="Social Media">Social Media</option>
+              <option value="Market Research">Market Research</option>
+              <option value="Operations">Operations</option>
+            </select>
+
+            <select id="filterSchedule" aria-label="Filter by Schedule Fit">
+              <option value="all">All Schedules</option>
+              <option value="Evenings">Evenings (After Classes)</option>
+              <option value="Weekends">Weekends</option>
+              <option value="Flexible">Flexible / Hybrid</option>
+              <option value="Term Break">Term Break / Full-Time</option>
+            </select>
+
+            <select id="sortSelect" aria-label="Sort Opportunities">
+              <option value="match">Sort: Best Profile Match</option>
+              <option value="newest">Sort: Newest First</option>
+              <option value="stipend">Sort: Highest Stipend</option>
+            </select>
+
+            <button class="btn btn-ghost btn-sm" id="clearFiltersBtn">Reset</button>
+          </div>
+        </div>
+
+        <div class="results-bar">
+          <span id="resultsCount">Showing 0 opportunities</span>
+          <span class="demo-note">Note: Sample listings represent illustrative Dehradun market roles for this MVP.</span>
+        </div>
+
+        <!-- Opportunities Grid -->
+        <div class="opportunities-grid" id="opportunitiesGrid"></div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 3: STUDENT DASHBOARD ==================== -->
+    <section id="view-dashboard" class="view">
+      <div class="page-header">
+        <div class="container">
+          <span class="section-tag">Student Workspace</span>
+          <h1>Student Dashboard</h1>
+          <p>Manage your student profile, track submitted applications, and review top schedule-matched opportunities.</p>
+        </div>
+      </div>
+
+      <div class="container page-body">
+        <!-- Dashboard Stats -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-label">Profile Status</span>
+            <strong class="stat-value" id="statProfileStatus">Not Created</strong>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Applications Submitted</span>
+            <strong class="stat-value" id="statAppliedCount">0</strong>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Saved Opportunities</span>
+            <strong class="stat-value" id="statSavedCount">0</strong>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Strong Profile Matches</span>
+            <strong class="stat-value" id="statMatchesCount">0</strong>
+          </div>
+        </div>
+
+        <div class="dashboard-layout">
+          <!-- Left Column: Student Profile Card -->
+          <div class="dashboard-sidebar">
+            <div class="panel-card" id="dashboardProfileCard">
+              <!-- Populated dynamically by app.js -->
+            </div>
+          </div>
+
+          <!-- Right Column: Applications, Saved & Matches -->
+          <div class="dashboard-main">
+            <!-- Tabs -->
+            <div class="dash-tabs">
+              <button class="dash-tab active" data-dashtab="applications">My Applications</button>
+              <button class="dash-tab" data-dashtab="matches">Matched For Me</button>
+              <button class="dash-tab" data-dashtab="saved">Saved Opportunities</button>
+            </div>
+
+            <div class="dash-panel active" id="dash-applications"></div>
+            <div class="dash-panel" id="dash-matches"></div>
+            <div class="dash-panel" id="dash-saved"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 4: FOR BUSINESSES ==================== -->
+    <section id="view-business" class="view">
+      <div class="page-header">
+        <div class="container">
+          <span class="section-tag">Partner With Local Talent</span>
+          <h1>Submit an Opportunity for Dehradun Students</h1>
+          <p>
+            Built for Dehradun startups, small businesses, retailers, agencies, and service providers looking for reliable student support in sales, marketing, research, social media, and operations.
+          </p>
+        </div>
+      </div>
+
+      <div class="container page-body">
+        <div class="business-layout">
+          <!-- Info Column -->
+          <div class="business-info">
+            <div class="panel-card">
+              <h3>Why Hire Through CampusBridge?</h3>
+              <ul class="check-list">
+                <li><strong>Reach MBA &amp; College Talent:</strong> Connect with students from DBS Global University and colleges across Dehradun.</li>
+                <li><strong>Flexible &amp; Affordable:</strong> Hire for short-term 3–6 week projects, part-time roles (10–15 hrs/week), or internships.</li>
+                <li><strong>Clear Schedule Alignment:</strong> Students indicate their class-free hours upfront to avoid scheduling conflicts.</li>
+                <li><strong>Screened Marketplace:</strong> Every submission is reviewed for clarity, legitimacy, and student suitability.</li>
+              </ul>
+              <hr class="divider" />
+              <h4>Pilot Submission Guide</h4>
+              <p class="muted-text">
+                Submitting this form adds your listing directly to the live Opportunities board in this browser session so you can preview how students discover and apply to your role.
+              </p>
+            </div>
+          </div>
+
+          <!-- Submission Form -->
+          <div class="business-form-wrap">
+            <form id="businessForm" class="panel-card form-grid">
+              <div class="form-section-title">1. Business Details</div>
+
+              <div class="form-group">
+                <label for="bizName">Business / Startup Name *</label>
+                <input type="text" id="bizName" required placeholder="e.g., Doon Roasters Cafe / Himalayan Digital Studio" />
+              </div>
+
+              <div class="form-group">
+                <label for="bizType">Business Category *</label>
+                <select id="bizType" required>
+                  <option value="">Select category</option>
+                  <option value="Local Startup">Local Startup</option>
+                  <option value="Small Business / Retailer">Small Business / Retailer</option>
+                  <option value="Marketing / Creative Agency">Marketing / Creative Agency</option>
+                  <option value="Service Provider">Service Provider</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="bizLocation">Dehradun Area / Location *</label>
+                <input type="text" id="bizLocation" required placeholder="e.g., Rajpur Road, Jakhan, Prem Nagar, GMS Road" />
+              </div>
+
+              <div class="form-group">
+                <label for="bizContact">Contact Person &amp; Email/Phone *</label>
+                <input type="text" id="bizContact" required placeholder="e.g., Rohan Verma • contact@business.in" />
+              </div>
+
+              <div class="form-section-title">2. Opportunity Details</div>
+
+              <div class="form-group full-width">
+                <label for="oppTitle">Opportunity Title *</label>
+                <input type="text" id="oppTitle" required placeholder="e.g., Social Media &amp; Local Campaign Intern" />
+              </div>
+
+              <div class="form-group">
+                <label for="oppType">Opportunity Type *</label>
+                <select id="oppType" required>
+                  <option value="Internship">Internship</option>
+                  <option value="Part-Time Job">Part-Time Job</option>
+                  <option value="Short-Term Project">Short-Term Project</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="oppDomain">Primary Business Function *</label>
+                <select id="oppDomain" required>
+                  <option value="Marketing">Marketing</option>
+                  <option value="Sales">Sales</option>
+                  <option value="Social Media">Social Media</option>
+                  <option value="Market Research">Market Research</option>
+                  <option value="Operations">Operations</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="oppSchedule">Schedule Compatibility *</label>
+                <select id="oppSchedule" required>
+                  <option value="Evenings">Evenings (After Classes)</option>
+                  <option value="Weekends">Weekends</option>
+                  <option value="Flexible">Flexible / Hybrid</option>
+                  <option value="Term Break">Term Break / Full-Time</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="oppHours">Weekly Time &amp; Duration *</label>
+                <input type="text" id="oppHours" required placeholder="e.g., 10–12 hrs/week • 6 Weeks" />
+              </div>
+
+              <div class="form-group">
+                <label for="oppStipendText">Compensation / Stipend Label *</label>
+                <input type="text" id="oppStipendText" required placeholder="e.g., ₹5,000/month or ₹3,500/project" />
+              </div>
+
+              <div class="form-group">
+                <label for="oppStipendValue">Numeric Value in ₹ (for sorting) *</label>
+                <input type="number" id="oppStipendValue" min="0" required placeholder="e.g., 5000" />
+              </div>
+
+              <div class="form-group full-width">
+                <label for="oppSkills">Required Skills (comma-separated) *</label>
+                <input type="text" id="oppSkills" required placeholder="e.g., Social Media, Canva, Market Research, Communication" />
+              </div>
+
+              <div class="form-group full-width">
+                <label for="oppDescription">Role Description &amp; Key Deliverables *</label>
+                <textarea id="oppDescription" rows="4" required placeholder="Describe what the student will work on, learning exposure, and expected outcomes..."></textarea>
+              </div>
+
+              <div class="form-group full-width checkbox-row">
+                <input type="checkbox" id="bizVerifyCheck" required />
+                <label for="bizVerifyCheck">
+                  I confirm this is a genuine opportunity compatible with college academic schedules and open to CampusBridge pilot screening.
+                </label>
+              </div>
+
+              <div class="form-group full-width">
+                <button type="submit" class="btn btn-primary btn-lg btn-full">Submit Opportunity for Pilot Listing</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand footer-brand">
+          <span class="brand-logo">CB</span>
+          <div class="brand-text">
+            <span class="brand-name">CampusBridge</span>
+            <span class="brand-tag">Entrepreneurship &amp; Innovation Venture MVP</span>
+          </div>
+        </div>
+        <p class="footer-desc">
+          Connecting college and MBA students in Dehradun with verified local internships, part-time roles, and short-term projects tailored around academic schedules.
+        </p>
+      </div>
+      <div>
+        <h4>Platform</h4>
+        <ul class="footer-links">
+          <li><button data-nav="home">Home</button></li>
+          <li><button data-nav="opportunities">Browse Opportunities</button></li>
+          <li><button data-nav="dashboard">Student Dashboard</button></li>
+          <li><button data-nav="business">Post a Local Role</button></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Pilot Controls</h4>
+        <p class="footer-meta">Data is saved locally in your browser (`localStorage`) with no paid APIs or backend required.</p>
+        <button class="btn btn-outline btn-sm" id="resetDemoBtn">Reset Demo Data</button>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>CampusBridge • Dehradun, Uttarakhand • MVP Prototype</span>
+      <span>Built for DBS Global University Entrepreneurship &amp; Innovation Assignment 2</span>
+    </div>
+  </footer>
+
+  <!-- ==================== MODAL: STUDENT REGISTRATION / PROFILE ==================== -->
+  <div class="modal-overlay" id="profileModal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <span class="section-tag">Student Profile</span>
+          <h2 id="profileModalTitle">Create Your Student Profile</h2>
+        </div>
+        <button class="modal-close" data-close-modal="profileModal" aria-label="Close">&times;</button>
+      </div>
+      <form id="profileForm" class="form-grid">
+        <div class="form-group">
+          <label for="stuName">Full Name *</label>
+          <input type="text" id="stuName" required placeholder="e.g., Aarti Sharma" />
+        </div>
+
+        <div class="form-group">
+          <label for="stuEmail">College / Personal Email *</label>
+          <input type="email" id="stuEmail" required placeholder="e.g., name@dgu.ac.in" />
+        </div>
+
+        <div class="form-group">
+          <label for="stuCollege">College / University *</label>
+          <input type="text" id="stuCollege" required value="DBS Global University, Dehradun" />
+        </div>
+
+        <div class="form-group">
+          <label for="stuProgram">Program &amp; Year *</label>
+          <select id="stuProgram" required>
+            <option value="MBA (1st Year)">MBA (1st Year)</option>
+            <option value="MBA (2nd Year)">MBA (2nd Year)</option>
+            <option value="Undergraduate (BBA / B.Com / B.Tech)">Undergraduate (BBA / B.Com / B.Tech)</option>
+            <option value="Postgraduate (Other)">Postgraduate (Other)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="stuArea">Preferred Dehradun Area *</label>
+          <input type="text" id="stuArea" required placeholder="e.g., Prem Nagar, Rajpur Road, Jakhan, Hybrid" />
+        </div>
+
+        <div class="form-group">
+          <label for="stuAvailability">Academic Schedule Availability *</label>
+          <select id="stuAvailability" required>
+            <option value="Evenings">Evenings (After Classes)</option>
+            <option value="Weekends">Weekends Only</option>
+            <option value="Flexible">Flexible / Hybrid (10–15 hrs/wk)</option>
+            <option value="Term Break">Term Break / Full-Time</option>
+          </select>
+        </div>
+
+        <div class="form-group full-width">
+          <label>Select Your Skills &amp; Interests *</label>
+          <div class="skill-chips-picker" id="skillChipsPicker">
+            <label class="chip-option"><input type="checkbox" value="Marketing" /><span>Marketing</span></label>
+            <label class="chip-option"><input type="checkbox" value="Sales" /><span>Sales</span></label>
+            <label class="chip-option"><input type="checkbox" value="Social Media" /><span>Social Media</span></label>
+            <label class="chip-option"><input type="checkbox" value="Market Research" /><span>Market Research</span></label>
+            <label class="chip-option"><input type="checkbox" value="Operations" /><span>Operations</span></label>
+            <label class="chip-option"><input type="checkbox" value="Excel" /><span>Excel &amp; Data</span></label>
+            <label class="chip-option"><input type="checkbox" value="Content Writing" /><span>Content Writing</span></label>
+            <label class="chip-option"><input type="checkbox" value="Canva" /><span>Canva / Design</span></label>
+            <label class="chip-option"><input type="checkbox" value="Customer Outreach" /><span>Customer Outreach</span></label>
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="stuCustomSkills">Additional Skills (comma-separated, optional)</label>
+          <input type="text" id="stuCustomSkills" placeholder="e.g., SEO, Tally, CRM, Public Speaking" />
+        </div>
+
+        <div class="form-group full-width">
+          <label for="stuBio">Short Career Goal / Bio</label>
+          <textarea id="stuBio" rows="3" placeholder="Briefly describe what practical experience you are looking for alongside your studies..."></textarea>
+        </div>
+
+        <div class="form-group full-width modal-footer-actions">
+          <button type="button" class="btn btn-ghost" data-close-modal="profileModal">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Student Profile</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL: OPPORTUNITY DETAILS ==================== -->
+  <div class="modal-overlay" id="detailModal" aria-hidden="true">
+    <div class="modal-card modal-lg">
+      <div class="modal-header">
+        <div>
+          <div class="detail-badges" id="detailBadges"></div>
+          <h2 id="detailTitle">Opportunity Title</h2>
+          <p class="detail-company" id="detailCompany"></p>
+        </div>
+        <button class="modal-close" data-close-modal="detailModal" aria-label="Close">&times;</button>
+      </div>
+      <div class="detail-body" id="detailBody"></div>
+      <div class="modal-footer-actions" id="detailFooter"></div>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL: APPLY NOW ==================== -->
+  <div class="modal-overlay" id="applyModal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <span class="section-tag">Quick Application</span>
+          <h2 id="applyRoleTitle">Apply for Opportunity</h2>
+          <p class="muted-text" id="applyRoleCompany"></p>
+        </div>
+        <button class="modal-close" data-close-modal="applyModal" aria-label="Close">&times;</button>
+      </div>
+
+      <form id="applyForm" class="form-grid">
+        <input type="hidden" id="applyOppId" />
+
+        <div class="form-group">
+          <label for="applyName">Full Name *</label>
+          <input type="text" id="applyName" required placeholder="Your full name" />
+        </div>
+
+        <div class="form-group">
+          <label for="applyEmail">Email *</label>
+          <input type="email" id="applyEmail" required placeholder="Your email address" />
+        </div>
+
+        <div class="form-group">
+          <label for="applyCollege">College &amp; Program *</label>
+          <input type="text" id="applyCollege" required placeholder="e.g., DBS Global University — MBA" />
+        </div>
+
+        <div class="form-group">
+          <label for="applyPhone">Phone / WhatsApp *</label>
+          <input type="tel" id="applyPhone" required placeholder="10-digit mobile number" />
+        </div>
+
+        <div class="form-group full-width">
+          <label for="applyScheduleConfirm">Your Available Hours / Class Schedule Fit *</label>
+          <input type="text" id="applyScheduleConfirm" required placeholder="e.g., Available weekdays after 3:30 PM &amp; Saturdays" />
+        </div>
+
+        <div class="form-group full-width">
+          <label for="applyNote">Why are you a good fit for this role? *</label>
+          <textarea id="applyNote" rows="4" required placeholder="Highlight your relevant coursework, skills, or interest in this local business..."></textarea>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="applyLink">LinkedIn / Resume / Portfolio Link (optional)</label>
+          <input type="url" id="applyLink" placeholder="https://linkedin.com/in/your-profile" />
+        </div>
+
+        <div class="form-group full-width modal-footer-actions">
+          <button type="button" class="btn btn-ghost" data-close-modal="applyModal">Cancel</button>
+          <button type="submit" class="btn btn-primary">Submit Application</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
